@@ -1,0 +1,475 @@
+*{ margin: 0;} 
+body
+{
+    background-color: ghostwhite;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+/*header*/
+.container
+{
+    margin: auto;
+    width: 1200px;
+}
+
+.header img
+{
+    height: 325px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*start navbar*/
+
+#cssmenu {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: auto;
+}
+
+#cssmenu .logo img {
+  float: left;
+  width: 130px;
+  height: 45px;
+}
+
+#cssmenu ul,
+#cssmenu li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#cssmenu ul {
+  position: relative;
+  z-index: 597;
+}
+
+#cssmenu ul li {
+  float: right;
+  min-height: 1px;
+  vertical-align:middle;
+}
+
+#cssmenu ul li.hover,
+#cssmenu ul li:hover {
+  position: relative;
+  z-index: 599;
+  cursor: default;
+}
+
+#cssmenu ul ul {
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 598;
+  width: 100%;
+}
+
+#cssmenu ul ul li {
+  float: none;
+}
+
+#cssmenu ul ul ul {
+  top: 0px;
+  right: 150px;
+  width: 150px;
+}
+
+#cssmenu ul li:hover > ul {
+  visibility: visible;
+}
+
+#cssmenu ul ul {
+  bottom: 0;
+  left: 0;
+}
+
+#cssmenu ul ul {
+  margin-top: 0;
+}
+
+#cssmenu ul ul li {
+  font-weight: normal;
+}
+
+#cssmenu a {
+  display: block;
+  line-height: 1em;
+  text-decoration: none;
+}
+
+#cssmenu {
+  background: #333333;
+  border-bottom: 4px solid red;
+  font-family: 'Oxygen Mono', Tahoma, Arial, sans-serif;
+  font-size: 12px;
+}
+
+#cssmenu > ul {
+  *display: inline-block;
+}
+
+#cssmenu:after,
+#cssmenu ul:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+
+#cssmenu ul ul {
+  border-top: 4px solid red;
+  text-transform: none;
+  min-width: 150px;
+}
+
+#cssmenu ul ul a {
+  background: red;
+  color: #ffffff;
+  border: 1px solid red;
+  border-top: 0 none;
+  line-height: 150%;
+  padding: 16px 20px;
+  font-size: 12px;
+}
+
+#cssmenu ul ul ul {
+  border-top: 0 none;
+}
+
+#cssmenu ul ul li {
+  position: relative;
+}
+#cssmenu ul ul li:first-child > a {
+  border-top: 1px solid red;
+}
+
+#cssmenu ul ul li:hover > a {
+  background: red;
+  color: #ffffff;
+}
+
+#cssmenu ul ul li.has-sub > a:after
+
+{
+  content: '+';
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  margin-top: -8px;
+}
+
+#cssmenu ul li:hover > a,
+#cssmenu ul li.active > a
+
+{
+  background: red;
+  color: #ffffff;
+}
+
+#cssmenu ul li.has-sub > a:after 
+{
+  content: '+';
+  margin-left: 10px;
+}
+
+#cssmenu ul li.last ul {
+  left: auto;
+  right: 0;
+}
+#cssmenu ul li.last ul ul {
+  left: auto;
+  right: 99.5%;
+}
+#cssmenu a {
+  background: #333333;
+  color: #CBCBCB;
+  padding: 0 20px;
+}
+#cssmenu > ul > li > a {
+  line-height: 48px;
+  font-size: 12px;
+}
+
+
+/*end navbar*/
+
+body 
+{
+font-family:Arial, Helvetica, sans-serif;
+background-color:whitesmoke;
+font-size:11px;
+}
+
+h1
+{
+    font-family:Arial, Helvetica, sans-serif;
+    color: red;
+    text-align: center;
+    text-shadow: 20px; 
+    margin: 50px;
+    text-shadow:-5px 14px 6px #000000;
+
+}
+/*start marquee*/
+
+marquee
+{
+  
+  background:  #e6e6e6;   
+  color: aliceblue;
+  font-size: 25px;
+  width: 100%;
+  overflow:visible;
+  border-color:#b3b3b3;
+  color: black;
+  box-shadow: -2px 4px 45px #000000;
+
+}
+
+
+marquee .logo img
+{
+    width: 70px;
+    height: 25px;
+    
+    
+    
+}
+
+
+/* end marquee*/
+
+
+.site-news{
+    
+	padding-top:30px;
+	padding-bottom:15px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    overflow: hidden;
+}
+.site-news #css3-slider{
+    float:left;
+	width:65%;
+}
+.site-news .down{
+	float:right;
+    width:25%;
+
+}
+
+
+
+
+
+
+
+
+.site-news #css3-slider {
+  margin:20px auto;
+  padding:0px 0px;
+  width:600px;
+  height:286px;
+  position:relative;
+ margin-left: 50px;
+box-shadow: -2px 3px 42px #000000;
+
+}
+
+.site-news #css3-slider li {
+  list-style:none;
+  margin:0px 0px;
+  padding:0px 0px;
+}
+
+/* Navigation */
+.site-news #css3-slider li input + label {
+  position:absolute;
+  bottom:5px;
+  left:10px;
+  z-index:999;
+  font:bold 11px/16px Arial,Sans-Serif;
+  background-color:black;
+  color:white;
+  padding:0px 0px;
+  width:16px;
+  text-align:center;
+  cursor:pointer;
+}
+
+.site-news #css3-slider li:nth-child(2) label {left:28px;}
+.site-news #css3-slider li:nth-child(3) label {left:46px;}
+.site-news #css3-slider li:nth-child(4) label {left:64px;}
+.site-news #css3-slider li:nth-child(5) label {left:82px;}
+
+/* Images */
+.site-news #css3-slider li img {
+  border:none;
+  outline:none;
+  position:absolute;
+  top:50%;
+  left:50%;
+  width:0px;
+  height:0px;
+  visibility:hidden;
+  opacity:0;
+  transition:all 2s ease-in-out;
+  transform:rotate(0deg) scale(0);
+}
+
+/* Captions */
+.site-news #css3-slider a {
+  text-decoration:none !important;
+}
+
+#css3-slider li a span {
+  cursor:default;
+  display:block;
+  position:absolute;
+  right:0px;
+  bottom:0px;
+  left:0px;
+  background-color:rgba(0,0,0,0.8);
+  font:normal 11px/26px Arial,Sans-Serif;
+  color:white;
+  padding:0px 10px;
+  text-align:right;
+  opacity:0;
+  transition:all 2s ease-in-out;
+  height: 75px;
+  font-size: 15px;
+  font-weight: bold;
+  
+}
+
+/* Active navigation */
+
+.site-news #css3-slider li input:checked + label {
+  background-color:red;
+  color:white;
+}
+
+/* Show the image with transition */
+
+.site-news #css3-slider li input:checked ~ img,
+.site-news #css3-slider li input:checked ~ a img {
+  top:0%;
+  left:0%;
+  width:600px;
+  height:286px;
+  visibility:visible;
+  transform:rotate(720deg) scale(1);
+  opacity:1;
+  z-index:99;
+}
+
+/* Show the caption with fade effect */
+.site-news #css3-slider li input:checked ~ a span {
+  opacity:1;
+  z-index:100;
+}
+
+
+
+
+
+
+***************
+
+
+
+
+
+.site-news .down{
+	margin-left:50px;
+    overflow: hidden;
+    
+}
+
+.site-news h3{
+	
+    margin-right: 200px;
+    color: red;
+    direction: rtl;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+.site-news h2{
+	color: red;
+    margin-left: 50px;
+    font-size: 25px;
+}
+
+.site-news .down div button{
+	background:none;
+	padding:10px 30px;
+	color:red;
+	border:3px solid red;
+	margin-top:40px;
+	margin-left:20px;
+}
+	
+
+.reports{
+    overflow: hidden;
+}
+
+.reports h3{
+    overflow: hidden;
+    text-align: center;
+    font-size: 25px;
+    color: red;
+    text-decoration: underline;
+    
+}
+
+.reports h4{
+    font-size: 10px;
+    color: red;
+    width: 33.3333333333%;
+    overflow: hidden;
+    float: left;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 15px;
+}
+.reports video{
+    
+    width: 29%;
+    float: left;
+    margin: 22px;
+    
+}
+
+.reports video:hover {
+    
+      box-shadow: -2px 4px 45px red;
+
+    
+}
+
+/* start footer Css */
+
+.footer{
+    
+    margin:20px 0px 0px 0px;
+	background:#333333;
+	padding:20px 0;
+	text-align:center;
+	color:#FFF;
+    font-weight: bolder;
+    font-size: 15px;
+    
+}
+
+/* end footer Css */

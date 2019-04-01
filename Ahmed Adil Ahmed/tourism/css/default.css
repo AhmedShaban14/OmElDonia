@@ -1,0 +1,479 @@
+*{ margin: 0;} 
+body
+{
+    background-color: ghostwhite;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+/*header*/
+.container
+{
+    margin: auto;
+    width: 1200px;
+}
+
+.header img
+{
+    height: 325px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*start navbar*/
+
+#cssmenu {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: auto;
+}
+
+#cssmenu .logo img {
+  float: left;
+  width: 130px;
+  height: 45px;
+}
+
+#cssmenu ul,
+#cssmenu li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#cssmenu ul {
+  position: relative;
+  z-index: 597;
+}
+
+#cssmenu ul li {
+  float: right;
+  min-height: 1px;
+  vertical-align:middle;
+}
+
+#cssmenu ul li.hover,
+#cssmenu ul li:hover {
+  position: relative;
+  z-index: 599;
+  cursor: default;
+}
+
+#cssmenu ul ul {
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 598;
+  width: 100%;
+}
+
+#cssmenu ul ul li {
+  float: none;
+}
+
+#cssmenu ul ul ul {
+  top: 0px;
+  right: 150px;
+  width: 150px;
+}
+
+#cssmenu ul li:hover > ul {
+  visibility: visible;
+}
+
+#cssmenu ul ul {
+  bottom: 0;
+  left: 0;
+}
+
+#cssmenu ul ul {
+  margin-top: 0;
+}
+
+#cssmenu ul ul li {
+  font-weight: normal;
+}
+
+#cssmenu a {
+  display: block;
+  line-height: 1em;
+  text-decoration: none;
+}
+
+#cssmenu {
+  background: #333333;
+  border-bottom: 4px solid red;
+  font-family: 'Oxygen Mono', Tahoma, Arial, sans-serif;
+  font-size: 12px;
+}
+
+#cssmenu > ul {
+  *display: inline-block;
+}
+
+#cssmenu:after,
+#cssmenu ul:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+
+#cssmenu ul ul {
+  border-top: 4px solid red;
+  text-transform: none;
+  min-width: 150px;
+}
+
+#cssmenu ul ul a {
+  background: red;
+  color: #ffffff;
+  border: 1px solid red;
+  border-top: 0 none;
+  line-height: 150%;
+  padding: 16px 20px;
+  font-size: 12px;
+}
+
+#cssmenu ul ul ul {
+  border-top: 0 none;
+}
+
+#cssmenu ul ul li {
+  position: relative;
+}
+#cssmenu ul ul li:first-child > a {
+  border-top: 1px solid red;
+}
+
+#cssmenu ul ul li:hover > a {
+  background: red;
+  color: #ffffff;
+}
+
+
+#cssmenu ul ul li.has-sub > a:after
+
+{
+  content: '+';
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  margin-top: -8px;
+}
+
+#cssmenu ul li:hover > a,
+#cssmenu ul li.active > a
+
+{
+  background: red;
+  color: #ffffff;
+}
+
+#cssmenu ul li.has-sub > a:after 
+{
+  content: '+';
+  margin-left: 10px;
+}
+
+#cssmenu ul li.last ul {
+  left: auto;
+  right: 0;
+}
+#cssmenu ul li.last ul ul {
+  left: auto;
+  right: 99.5%;
+}
+#cssmenu a {
+  background: #333333;
+  color: #CBCBCB;
+  padding: 0 20px;
+}
+#cssmenu > ul > li > a {
+  line-height: 48px;
+  font-size: 12px;
+}
+
+
+/*end navbar*/
+
+body 
+{
+font-family:Arial, Helvetica, sans-serif;
+background-color:whitesmoke;
+font-size:11px;
+}
+
+
+
+/* sections Css */
+
+.sections{
+    overflow: hidden;
+	padding-top:40px;
+	padding-bottom:55px;
+}
+
+.sections h1{
+    
+    text-align: center;
+    text-shadow:1px 2px 3px #A7A5A6,
+	            2px 3px 7px #9F9F9F,
+                2px 3px 7px #9F9F9F;
+    color: red;
+}
+
+.sections h2{
+    
+    text-shadow:1px 2px 3px #A7A5A6,
+	            2px 3px 7px #9F9F9F,
+                2px 3px 7px #9F9F9F;
+    direction: rtl;
+    
+}
+.sections .sec{
+	float:left;
+	width:25%;
+	height:150px;
+}
+	
+.sections .sec h2{
+	color:#444;
+	text-align:center;
+	text-shadow:1px 2px 3px #A7A5A6,
+	            2px 3px 7px #9F9F9F,
+                2px 3px 7px #9F9F9F;
+}
+
+.sections .sec p img{
+    overflow: hidden;
+	margin: 25px;
+    border-radius: 15px;
+    height: 150px;
+    width: 250px;
+}
+
+/* end choices */
+
+/* parts */
+
+/*s1*/
+
+
+.s1
+
+{
+overflow: hidden;
+background:#ceacac;
+margin: 15px;
+border-radius: 25px;
+padding: 25px;
+display:none;
+
+}
+.s1 .image{
+	float:left;
+	width:40%;
+}
+.s1 .image img{
+	width:82%;
+	border-radius:10%;
+}
+
+.s1 .info{
+	width:60%;
+	float:right;
+	
+}
+.s1 .info h2{
+    margin:20px 0 20px 10px;
+	color:red;
+    direction: rtl;
+    font-size: 40px
+}
+.s1 .info > p{
+	margin:0 0 10px 10px;
+}
+.s1 .info > p:last-of-type{
+	margin-top:15px;
+}
+.s1 .info p{
+	color:black;
+	line-height:1.5;
+    direction: rtl;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/*s2*/
+
+
+.s2
+
+{
+overflow: hidden;
+background:#ceacac;
+margin: 15px;
+border-radius: 25px;
+padding: 25px;
+display:none;
+
+}
+.s2 .image{
+	float:left;
+	width:40%;
+  
+}
+.s2 .image img{
+	width:82%;
+	border-radius:10%;
+    box-shadow: 15px;
+}
+
+.s2 .info{
+	width:60%;
+	float:left;
+	
+}
+.s2 .info h2{
+	margin:20px 0 20px 10px;
+	color:red;
+    direction: rtl;
+    font-size: 40px
+}
+.s2 .info > p{
+	margin:0 0 10px 10px;
+}
+.s2 .info > p:last-of-type{
+	margin-top:15px;
+}
+.s2 .info p{
+	color:black;
+	line-height:1.5;
+    direction: rtl;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+/*s3*/
+
+.s3
+
+{
+overflow: hidden;
+background:#ceacac;
+margin: 15px;
+border-radius: 25px;
+padding: 25px;
+display:none;
+
+}
+.s3 .image{
+	float:left;
+	width:40%;
+}
+.s3 .image img{
+	width:82%;
+	border-radius:10%;
+}
+
+.s3 .info{
+	width:60%;
+	float:left;
+	
+}
+.s3 .info h2{
+    margin:20px 0 20px 10px;
+	color:red;
+    direction: rtl;
+    font-size: 40px
+}
+.s3 .info > p{
+	margin:0 0 10px 10px;
+}
+.s3 .info > p:last-of-type{
+	margin-top:15px;
+}
+.s3 .info p{
+	color:black;
+	line-height:1.5;
+    direction: rtl;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/*s4*/
+
+.s4
+
+{
+overflow: hidden;
+background:#ceacac;
+margin: 15px;
+border-radius: 25px;
+padding: 25px;
+display:none;
+
+}
+.s4 .image{
+	float:left;
+	width:40%;
+}
+.s4 .image img{
+	width:82%;
+	border-radius:10%;
+}
+
+.s4 .info{
+	width:60%;
+	float:left;
+	
+}
+.s4 .info h2{
+    margin:20px 0 20px 10px;
+	color:red;
+    direction: rtl;
+    font-size: 40px
+}
+.s4 .info > p{
+	margin:0 0 10px 10px;
+}
+.s4 .info > p:last-of-type{
+	margin-top:15px;
+}
+.s4 .info p{
+	color:black;
+	line-height:1.5;
+    direction: rtl;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+
+/* end parts */
+
+
+
+
+/* start footer Css */
+
+.footer{
+    
+    margin:20px 0px 0px 0px;
+	background:#333333;
+	padding:20px 0;
+	text-align:center;
+	color:#FFF;
+    font-weight: bolder;
+    font-size: 15px;
+    
+}
+
+/* end footer Css */

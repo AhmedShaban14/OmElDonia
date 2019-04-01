@@ -1,0 +1,348 @@
+*{ margin: 0;} 
+body
+{
+    background-color: ghostwhite;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+/*header*/
+.container
+{
+    margin: auto;
+    width: 1200px;
+}
+
+.header img
+{
+    height: 325px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*start navbar*/
+
+#cssmenu {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: auto;
+}
+
+#cssmenu .logo img {
+  float: left;
+  width: 130px;
+  height: 45px;
+}
+
+#cssmenu ul,
+#cssmenu li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#cssmenu ul {
+  position: relative;
+  z-index: 597;
+}
+
+#cssmenu ul li {
+  float: right;
+  min-height: 1px;
+  vertical-align:middle;
+}
+
+#cssmenu ul li.hover,
+#cssmenu ul li:hover {
+  position: relative;
+  z-index: 599;
+  cursor: default;
+}
+
+#cssmenu ul ul {
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 598;
+  width: 100%;
+}
+
+#cssmenu ul ul li {
+  float: none;
+}
+
+#cssmenu ul ul ul {
+  top: 0px;
+  right: 150px;
+  width: 150px;
+}
+
+#cssmenu ul li:hover > ul {
+  visibility: visible;
+}
+
+#cssmenu ul ul {
+  bottom: 0;
+  left: 0;
+}
+
+#cssmenu ul ul {
+  margin-top: 0;
+}
+
+#cssmenu ul ul li {
+  font-weight: normal;
+}
+
+#cssmenu a {
+  display: block;
+  line-height: 1em;
+  text-decoration: none;
+}
+
+#cssmenu {
+  background: #333333;
+  border-bottom: 4px solid red;
+  font-family: 'Oxygen Mono', Tahoma, Arial, sans-serif;
+  font-size: 12px;
+}
+
+#cssmenu > ul {
+  *display: inline-block;
+}
+
+#cssmenu:after,
+#cssmenu ul:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+
+#cssmenu ul ul {
+  border-top: 4px solid red;
+  text-transform: none;
+  min-width: 150px;
+}
+
+#cssmenu ul ul a {
+  background: red;
+  color: #ffffff;
+  border: 1px solid red;
+  border-top: 0 none;
+  line-height: 150%;
+  padding: 16px 20px;
+  font-size: 12px;
+}
+
+#cssmenu ul ul ul {
+  border-top: 0 none;
+}
+
+#cssmenu ul ul li {
+  position: relative;
+}
+#cssmenu ul ul li:first-child > a {
+  border-top: 1px solid red;
+}
+
+#cssmenu ul ul li:hover > a {
+  background: red;
+  color: #ffffff;
+}
+
+#cssmenu ul ul li.has-sub > a:after
+
+{
+  content: '+';
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  margin-top: -8px;
+}
+
+#cssmenu ul li:hover > a,
+#cssmenu ul li.active > a
+
+{
+  background: red;
+  color: #ffffff;
+}
+
+#cssmenu ul li.has-sub > a:after 
+{
+  content: '+';
+  margin-left: 10px;
+}
+
+#cssmenu ul li.last ul {
+  left: auto;
+  right: 0;
+}
+#cssmenu ul li.last ul ul {
+  left: auto;
+  right: 99.5%;
+}
+#cssmenu a {
+  background: #333333;
+  color: #CBCBCB;
+  padding: 0 20px;
+}
+#cssmenu > ul > li > a {
+  line-height: 48px;
+  font-size: 12px;
+}
+
+
+/*end navbar*/
+
+body 
+{
+font-family:Arial, Helvetica, sans-serif;
+background-color:whitesmoke;
+font-size:11px;
+}
+
+h1
+{
+    font-family:Arial, Helvetica, sans-serif;
+    color: red;
+    text-align: center;
+    text-shadow: 20px;    
+}
+/*start form*/
+
+.wrapper
+{
+margin:200px auto 0;
+width:1000px;
+}
+
+
+.blocks p 
+{
+    
+margin-bottom:15px;
+position:relative;
+
+
+}
+
+.btn 
+{
+display:block;
+float:inherit;
+height:31px;
+line-height:31px;
+padding:0 10px;
+background:url(../images/bgbtn.jpg) repeat-x;
+color:#565e62;
+font-weight:bold;
+font-size:11px;
+border:1px solid #e1e0df;
+outline:none;
+}
+
+.text,
+.textarea {
+padding:5px 10px;
+height:27px;
+border:1px solid #ddd;
+color:#333;
+background:url(../images/bginput.jpg) repeat-x bottom #fff;
+position:relative;
+z-index:2;
+}
+
+.text {
+width:220px;
+}
+
+.textarea {
+height:150px;
+width:350px;
+}
+
+
+.blocks label 
+{
+float:left;
+width:100px;
+line-height:37px;
+text-align:right;
+margin-right:15px;
+font-weight:bold;
+color:#666;
+}
+
+.blocks label.error,
+.blocks label.ok {
+position:absolute;
+z-index:1;
+top:-4px;
+left:110px;
+padding:5px 15px 5px 280px;
+/*reset label*/
+width:auto;
+text-align:left;
+margin:0;
+background-repeat:no-repeat;
+background-position:257px 16px;
+}
+
+.blocks label.ok {
+background-image:url(../images/icook.gif);
+background-color:#deefca;
+color:#577530;
+}
+
+.blocks label.error {
+background-image:url(../images/icofail.gif);
+background-color:#f5d6d7;
+color:#c81925;
+}
+
+.area label.ok,
+.area label.error {
+height:163px;
+padding-left:410px;
+background-position:387px 16px;
+}
+
+
+/* CSS3 */
+.btn,
+.text,
+.textarea,
+.blocks label.error,
+.blocks label.ok { 
+-moz-border-radius:8px;
+-webkit-border-radius:8px;
+border-radius:10px;
+}
+
+
+/* end form*/
+
+
+
+/* start footer Css */
+
+.footer{
+    
+    margin:20px 0px 0px 0px;
+	background:#333333;
+	padding:20px 0;
+	text-align:center;
+	color:#FFF;
+    font-weight: bolder;
+    font-size: 15px;
+    
+}
+
+/* end footer Css */

@@ -1,0 +1,23 @@
+  /* fotter*/
+.upfotter{height: 9px;background-color: #222}
+
+.fotter
+{
+    height: 80px;
+    background-color: #333;
+}
+.copyright
+{
+    text-align: center;
+    padding: 20px;
+    
+}
+.copyright a
+{
+    color: #777;
+}
+.copyright a :hover
+{
+    text-decoration: underline;
+    color: #fff;
+}
